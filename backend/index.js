@@ -9,7 +9,7 @@ app.use(cors({
 app.use(express.json());
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://admin:admin@try-mern-to-production.ut0kcox.mongodb.net/");
+mongoose.connect("mongodb+srv://admin:admin@try-mern-to-production.ut0kcox.mongodb.net/add-to-production");
 const db = mongoose.connection;
 
 db.on("error", (error) => console.log("Error in Database Connection"));

@@ -3,6 +3,8 @@ const app = express();
 const cors = require("cors");
 app.use(cors({
   origin: "https://test-mern-deploy-to-production.netlify.app/",
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
 }));
 app.use(express.json());
 
